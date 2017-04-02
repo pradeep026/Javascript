@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Javascript Basics </title>
+    <style type="text/css" rel="stylesheet">
+      body, h1, h2, h3, p, span{
+        line-height: 1;
+        color: #4d4e53;
+        font-family: 'Open Sans',Arial,sans-serif;
+      }
+      b, span{
+        color: #0095dd;
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="title"> Introduction to Javascript and DOM </h1>
+
+    <ul>
+      <li><p>Javascript is a client-side scripting language.</p></li>
+      <li><p>Javascript is an object oriented scripting language.</p></li>
+      <li><p>Whereas <b>HTML</b> defines a webpage's structure and content and <b>CSS</b> sets the formatting and appearance,
+        <br /><b>JavaScript</b> adds interactivity to a webpage and creates rich web applications.</p>
+      </li>
+      <li><p>The HTML page is converted into a tree strctured Objects in DOM (Document Object Model). </p></li>
+      <li><p>Javascript interacts with DOM (DOM provides In-build API) to manipulate a web page. </p></li>
+    </ul>
+    <div>
+      <h2>  How Javascript Interacts DOM ? </h2>
+      <p> DOM provides an object called <b>document</b> to manipulate a web page. </p>
+      <p> We can modify the content of a DIV or any HTML element through this <b>document</b> object. </p>
+      <p> I have listed a few properites of <b>document</b> object.
+        <ul>
+          <li> <p> <span>document.body</span> - Which returns the entier body of the html page.</p> </li>
+          <li> <p> <span>document.body.appendChild</span> - Which appends a new HTML element to the page.</p> </li>
+          <li> <p> <span>document.title</span> - We can get the title of the current page and as well as we can set new title to the page.</p> </li>
+          <li> <p> <span>document.getElementById</span> - Which returns the HTML element of the given ID. </p></li>
+          <li> <p> <span>document.getElementsByTagName</span> - Which returns all the HTML element of the given tag name. It returns an array of HTMLElement. </p></li>
+          <li> <p> <span>document.getElementsByClassName</span> - Which returns all the HTML element of the given css class name. It returns an array of HTMLElement. </p></li>
+          <li> <p> <span>document.createElement</span> - Which helps to create HTML element dynamically in run time.</p></li>
+        </ul>
+      </p>
+
+    </div>
+    <div>
+      <h3> Examples </h3>
+      <div id="content">
+      </div>
+      <input type="button" value="Add a DIV" onClick="appendChildElement();"/>
+      <input type="button" value="Show title" onClick="getPageTitle();"/>
+      <input type="button" value="Change title" onClick="changePageTitle();"/>
+    </div>
+
+    <!-- For better web page performance include all scripts before body tag close -->
+    <script src="index.js"></script>
+  </body>
+</html>

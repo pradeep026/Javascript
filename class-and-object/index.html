@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Javascript Class and Objects </title>
+    <style type="text/css" rel="stylesheet">
+      body, h1, h2, h3, p, span{
+        line-height: 1.25;
+        color: #4d4e53;
+        font-family: 'Open Sans',Arial,sans-serif;
+      }
+      b, span{
+        color: #0095dd;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="title"> Javascript variables and functions </h1>
+    <p>
+      In javascript everything is an object. It is an object oriented scripting language.
+    </p>
+    <p>
+      Objects can be initialized using new Object() or Object.create() or literal notation as like JSON (using curly braces {})
+    </p>
+
+    <h2> Object.keys </h2>
+    <p> It returns all the keys in an object </p>
+    <p> It returns an array </p>
+    <p> Example :
+      <br>
+      var o = {
+        name:name,
+        age:age,
+        sex:sex,
+        weight:weight
+      }; <br/><br/>
+      Object.keys(o); // ["name", "age", "sex", "weight"];
+    </p>
+
+    <h2> hasOwnProperty </h2>
+    <p> It helps to find a property in an object user defined </p>
+    <p> It returns an Boolean [true | false]</p>
+    <p> Example :
+      <br>
+      var obj = {
+        x: 'foo'
+      }; <br/><br/>
+      console.log(obj.hasOwnProperty('x')); //true
+    </p>
+    <!-- For better web page performance include all scripts before body tag close -->
+    <script src="index.js"></script>
+  </body>
+</html>
